@@ -6,6 +6,11 @@ export class PropertiesService
     getProperties()
 	  {
 		  return props;
+    }
+    
+    getPropertyById(id:number)
+	  {
+		  return props.find(property=>property.id === id);
 	  }
 }
 

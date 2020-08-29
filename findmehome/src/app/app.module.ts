@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { PropertyListComponent } from './properties/properties-list.component';
 import { PropertyThumbnailComponent } from './properties/property-thumbnail.component';
 import { NavBarComponent } from './nav/nav-bar.component';
+import { PropertiesService } from './properties/shared/properties.service';
+import { ToastrService } from './common/toastr.service';
+import { AppRoutingModule } from './app-routing.module';
+import { PropertyDetailsComponent } from './properties/property-details/property-details.component';
 
 @NgModule({
   declarations: [
@@ -14,9 +18,13 @@ import { NavBarComponent } from './nav/nav-bar.component';
     NavBarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    PropertiesService,
+    ToastrService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
