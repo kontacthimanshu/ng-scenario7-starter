@@ -7,7 +7,7 @@ export class PropertiesService
 	  {
 		  return props;
     }
-    
+
     getPropertyById(id:number)
 	  {
 		  return props.find(property=>property.id === id);

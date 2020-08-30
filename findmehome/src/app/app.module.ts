@@ -8,7 +8,6 @@ import { NavBarComponent } from './nav/nav-bar.component';
 import { PropertiesService } from './properties/shared/properties.service';
 import { ToastrService } from './common/toastr.service';
 import { AppRoutingModule } from './app-routing.module';
-import { PropertyDetailsComponent } from './properties/property-details/property-details.component';
 
 @NgModule({
   declarations: [
